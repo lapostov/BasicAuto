@@ -1,19 +1,21 @@
 package ru.netology.BasicAuto.BonusService;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import org.junit.Assert;
 
-import static org.junit.jupiter.api.Assertions.*;
+
+
 
 class BonusServiceTest {
 
     @Test
-    void calculateBonus() {
+    public void calculateBonus() {
         BonusService service = new BonusService();
         int expected = 10;
         int amount = 2000;
 
-        int actual = service.calculateBonus(amount);
+        int actual = service.calculateBonus(2000);
 
-        assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual);
     }
 }
