@@ -30,7 +30,7 @@ public class CashbackHackServiceTest {
 
     @Test
     public void overFullPurchase() { CashbackHackService service = new CashbackHackService();
-        int expected = 1000;
+        int expected = 0;
 
 
         int actual = service.remain(1000);
