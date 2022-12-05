@@ -1,5 +1,6 @@
 package ru.netology.BasicAuto.BonusService;
 
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,7 +31,7 @@ public class CashbackHackServiceTest {
     public void FullAmount() {
 
         CashbackHackService service = new CashbackHackService();
-        int expected = 0;
+        int expected = 1000;
 
         int actual = service.remain(1000);
         Assert.assertEquals(actual, expected);
